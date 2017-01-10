@@ -29,10 +29,14 @@ form {
   font-weight: 800;
 }
 
+/*Remove height and width properties from main.js and bring to the css*/
+/*Use will-change property because we know that the images will change position*/
 .mover {
+  height: 100px;
   position: fixed;
-  width: 256px;
+  width: 73.333px;
   z-index: -1;
+  will-change: transform;
 }
 
 .randomPizzaContainer {
